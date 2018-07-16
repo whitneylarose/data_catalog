@@ -4,7 +4,10 @@ Oak Ride National Labratory <br>
 Advance Data and Workflow <br>
 Last Updated: July 11th, 2018<br>
 
-Note: This documentation assumes that the NFS drive endpoint is already created.
+This documentation assumes that the NFS drive endpoint is already created.
+
+Note:  Mounting the NFS drive to an existing directory "hides" the content of the directory. The content can be viewed again by umounting the drive. 
+
 
 1.  Install the required packages:
 ```
