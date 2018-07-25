@@ -1,8 +1,12 @@
-# data_catalog
+# ORNL Data Catalog
+Whitey Nelson <br>
+Oak Ridge Nation Labratory <br>
+Advance Data and Workflow group <br>
+Latest Update: July 25, 2018 <br>
 
 ### Introduction
 
-Refer to the following links for information on installations and modifications made to this cKan site.
+The infrastructure for this data catalog utilizes CADES cloud. Refer to the following links for information on set ups and modifications.
 
 1. [CADES Birthright VM Launch](http://support.cades.ornl.gov/user-documentation/_book/quick-starts/launch-vm-quick-start.html)
   - Networks Tab: choose general_extnetwork1
@@ -11,14 +15,9 @@ Refer to the following links for information on installations and modifications 
 4. [Add Additional Volume](https://github.com/pycroscopy/cades_birthright/blob/master/mount_drive.md)
 5. [Mounting a NFS drive](https://github.com/whitneylarose/data_catalog/blob/master/nfs_mount.md)
 6. [Globus File Transfer](https://github.com/whitneylarose/Globus-File-Transfer/blob/master/docs/globus_setup.md)
-7. [Users guide for CKan](http://docs.ckan.org/en/2.8/user-guide.html#registering-and-logging-in)
+7. [Running a Server](http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/simple-web-server.html)
+8. [Firewall Exception](http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/request-firewall.html)
 
-
-Running a Server
-http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/simple-web-server.html
-
-Firewall Exception
-http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/request-firewall.html
 
 ### Ckan
 CKan is a mature open source  public data repository utilized for this project. It is internationally active in the development community and provides a flexible schema for customization.  CKan is a python based content management system in contrast to DKAN which is Drupal based and is normally utilized for a PHP ecosystem for existing content management systems. Several other government institutions are utilizing Ckan to publish research data including [data.gov](https://data.gov).
@@ -27,6 +26,7 @@ CKan is a mature open source  public data repository utilized for this project. 
 
 This CKan installation requires Ubuntu 16.04 64-bit. Directions for this Ckan set up can be found [here](https://github.com/whitneylarose/ckan/blob/master/doc/maintaining/installing/install-from-package.rst).
 
+You can find addtional reference documentation on the [CKan doc's site](http://docs.ckan.org/en/2.8/).
 
 ### CKan Key terminology
 
