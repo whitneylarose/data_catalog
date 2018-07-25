@@ -49,7 +49,7 @@ Note: The datastore and datapusher are implemented but NOT enabled in this insta
 ### Creating organizations
 An user has the option to manually create organizations on the catalog site. By default, the user will become an admin to the organizations datasets with full access to edit/add/delete entires.
 
-**It is recommended that organizations are create manually via the Ckan site.** Creating organizations with the command line is possible but has limitations which are described below:
+**It is recommended that organizations are create manually via the Ckan site.** Creating organizations with the CKan API is possible but has limitations which are described below:
 
  An example of creating organizations is found in orgs_create.py. It requires a  CSV file in the argument of the command. The user would run the following to create multiple organizations:
 ```
@@ -97,7 +97,7 @@ Option 1: Manual Input
 
 This requires you to put in a key value pair for each peice of information you choose to answer. 
 
-Option 2: Command Line
+Option 2: CKan API
 
 When you create a package, specify the associated JSON metadata and it will insert each key value pair. 
 
@@ -111,9 +111,7 @@ Some users have data that is already stored in a preexisting data repository. In
 #### External Metadata
 Datasets can be stored remotely (with a URL) on the CKan server, metadata associated with the datasets needs to be accessible. This will allow a user to maintain the ability to make queries that will return sufficient results on the CKan site. There are two plugins that can be utilized to collect metadata from remote locations called ckan-next-harvest and ckan-json can be utilized to c
 
-The ckan-next-harvest plugin  allows Ckan to make request for metadata from other data repositories and storing in Ckan's central database. This allows
-It also provides a UI to manage the sources and jobs.
-Set up can be found via https://github.com/ckan/ckanext-harvest. The ckannext-json plugin utilizes the harverster to generate .json files. Instructions for installation can be found at https://github.com/HHS/ckanext-datajson.
+The ckan-next-harvest plugin  allows Ckan to make request for metadata from other data repositories and storing in Ckan's central database. It also provides a UI to manage the sources and jobs. Set up can be found via https://github.com/ckan/ckanext-harvest. The ckannext-json plugin utilizes the harverster to generate .json files. Instructions for installation can be found at https://github.com/HHS/ckanext-datajson.
 
 
 ### To change the file upload limit
