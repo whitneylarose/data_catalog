@@ -92,15 +92,18 @@ python filestore/packageCreate.py <file_path> <metadata_file_path>
 Metadata can be uploaded manually must be formatted in a JSON format and uploaded anytime a new package is created.
 
 There are two options provided to upload metadata:
-1. Manual input
-2. Command Line
-3. Plugin (Maybe possible)
 
 Option 1: Manual Input
-*  Navigate to catalog portal and login with credentials.
 
+This requires you to put in a key value pair for each peice of information you choose to answer. 
 
 Option 2: Command Line
+
+When you create a package, specify the associated JSON metadata and it will insert each key value pair. 
+
+```
+python filestore/packageCreate.py <file_path> <metadata_file_path>
+```
 
 ### Uploading metadata from outside resources
 Some users have data that is already stored in a preexisting data repository. In these cases, we do not want to duplicate the large datasets. Instead, the user has the option to provide the URL to the data and any associated metadata. This will be a direct link that the user can enter when creating a new resource.
