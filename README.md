@@ -19,16 +19,16 @@ The infrastructure for this data catalog utilizes CADES cloud. Refer to the foll
 8. [Firewall Exception](http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/request-firewall.html)
 
 
-### Ckan
-CKan is a mature open source  public data repository utilized for this project. It is internationally active in the development community and provides a flexible schema for customization.  CKan is a python based content management system in contrast to DKAN which is Drupal based and is normally utilized for a PHP ecosystem for existing content management systems. Several other government institutions are utilizing Ckan to publish research data including [data.gov](https://data.gov).
+### CKAN
+CKAN is a mature open source  public data repository utilized for this project. It is internationally active in the development community and provides a flexible schema for customization.  CKAN is a python based content management system in contrast to DKAN which is Drupal based and is normally utilized for a PHP ecosystem for existing content management systems. Several other government institutions are utilizing Ckan to publish research data including [data.gov](https://data.gov).
 
 ### Installation
 
-This CKan installation requires Ubuntu 16.04 64-bit. Directions for this Ckan set up can be found [here](https://github.com/whitneylarose/ckan/blob/master/doc/maintaining/installing/install-from-package.rst).
+This CKAN installation requires Ubuntu 16.04 64-bit. Directions for this CKAN set up can be found [here](https://github.com/whitneylarose/ckan/blob/master/doc/maintaining/installing/install-from-package.rst).
 
 You can find addtional reference documentation on the [CKan doc's site](http://docs.ckan.org/en/2.8/).
 
-### CKan Key terminology
+### CKAN Key terminology
 
 * **Organization:** An organization owns each dataset. Organizations consist of members who are allowed to edit/add/delete datasets according to their privileges. Refer to [Organizations and Authorizations](http://docs.ckan.org/en/2.8/maintaining/authorization.html) to learn more.
 
@@ -55,7 +55,7 @@ An user has the option to manually create organizations on the catalog site. By 
 ```
 python ors_create.py test_orgs.CSV
 ```
- However, this options has limitations. The name of an organization can only be alphameric lowercase without spaces. For example, "Test Organization Example" would show up on the catalog site as "test-organization-example". Ckan does not provide another way to name organizations via http request. Therefore, the only way to properly format the name of an organization is by manual user input on the catalog's site.
+ However, this options has limitations. The name of an organization can only be alphameric lowercase without spaces. For example, "Test Organization Example" would show up on the catalog site as "test-organization-example". CKAN does not provide another way to name organizations via http request. Therefore, the only way to properly format the name of an organization is by manual user input on the catalog's site.
 
  ### Deleting organizations  
 
@@ -97,7 +97,7 @@ Option 1: Manual Input
 
 This requires you to put in a key value pair for each peice of information you choose to answer. 
 
-Option 2: CKan API
+Option 2: CKAN API
 
 When you create a package, specify the associated JSON metadata and it will insert each key value pair. 
 
