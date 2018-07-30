@@ -2,13 +2,13 @@
 Whitey Nelson <br>
 Oak Ridge Nation Labratory <br>
 Advance Data and Workflow group <br>
-Latest Update: July 27, 2018 <br>
-
-### Introduction
+Latest Update: July 30, 2018 <br>
 
 
-#### Infrastructure 
-The infrastructure for this data catalog utilizes CADES cloud. Refer to the following links for information on set ups and modifications.
+Refer to the following links for information on set ups and modifications.
+
+### Infrastructure 
+The infrastructure for this data catalog utilizes CADES cloud.
 
 1. [CADES Birthright VM Launch](http://support.cades.ornl.gov/user-documentation/_book/quick-starts/launch-vm-quick-start.html)
     - Networks Tab: choose general_extnetwork1
@@ -18,7 +18,9 @@ The infrastructure for this data catalog utilizes CADES cloud. Refer to the foll
 5. [Mounting a NFS drive](https://github.com/whitneylarose/data_catalog/blob/master/docs/nfs_mount.md)
 6. [Running a Server](http://support.cades.ornl.gov/user-documentation/_book/openstack/additional/simple-web-server.html)
 
-#### Software 
+### Software 
+
+We utilzed CKAN, an open source data management framework. 
 
 1. [CKAN Overview](https://github.com/whitneylarose/data_catalog/blob/master/docs/ckan_install.md)
 2. [CKAN Install](https://github.com/whitneylarose/ckan/blob/master/doc/maintaining/installing/install-from-package.rst)
@@ -28,7 +30,7 @@ The infrastructure for this data catalog utilizes CADES cloud. Refer to the foll
 6. [File Limits](https://github.com/whitneylarose/data_catalog/blob/master/docs/file_limits.md)
 7. [Deletions](https://github.com/whitneylarose/data_catalog/blob/master/docs/deletions.md)
 
-#### Data Transfer tool 
+### Data Transfer tool 
 
 You will need a firewall exception to utilize Globus. 
 
