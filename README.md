@@ -33,6 +33,6 @@ We utilzed CKAN, an open source data management framework.
 6. [Deletions](https://github.com/whitneylarose/data_catalog/blob/master/docs/deletions.md)
 ### Data Transfer tool 
 
-You will need a firewall exception to utilize Globus. 
+You will need a firewall exception to utilize Globus. This may take up to 3 - 4 weeks 
 
 1. [Globus File Transfer](https://github.com/whitneylarose/data_catalog/blob/master/docs/globus_setup.md)
