@@ -1,6 +1,6 @@
 # Uploading a CKAN dataset  via API
 
-CKAN utilizes http request to upload datasets. This is okay for smaller datasets but slow and inefficient for larger datasets.
+The CKAN API utilizes http request to upload datasets. This is okay for smaller datasets but slow and inefficient for larger datasets.
 
 Note: A dataset is a single resource.
 
