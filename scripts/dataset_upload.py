@@ -45,7 +45,7 @@ data_string = urllib.quote(json.dumps(dataset_dict))
 
 # We'll use the package_create function to create a new dataset.
 request = urllib2.Request(
-    'http://128.219.187.22/api/action/package_create')
+    'http://your-ckan-site/api/action/package_create')
 
 # Creating a dataset requires an authorization header.
 request.add_header('Authorization', api_key)
