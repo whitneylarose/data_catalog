@@ -25,11 +25,12 @@ We utilzed CKAN, an open source data management framework.
 1. [CKAN Overview](https://github.com/whitneylarose/data_catalog/blob/master/docs/ckan_install.md)
 2. [CKAN Install](https://github.com/whitneylarose/ckan/blob/master/doc/maintaining/installing/install-from-package.rst)
 3. [Organizations](https://github.com/whitneylarose/data_catalog/blob/master/docs/organizations.md)
-4. [Dataset Uploads](https://github.com/whitneylarose/data_catalog/blob/master/docs/uploading_datasets.md)
-5. [Metadata](https://github.com/whitneylarose/data_catalog/blob/master/docs/metadata_handling.md)
-6. [File Limits](https://github.com/whitneylarose/data_catalog/blob/master/docs/file_limits.md)
-7. [Deletions](https://github.com/whitneylarose/data_catalog/blob/master/docs/deletions.md)
-
+4. CKAN API
+    - [Dataset Uploads](https://github.com/whitneylarose/data_catalog/blob/master/docs/uploading_datasets.md)
+    - [Dataset Downloads](https://github.com/whitneylarose/data_catalog/blob/master/docs/downloading_datasets.md)
+    - [Metadata](https://github.com/whitneylarose/data_catalog/blob/master/docs/metadata_handling.md)
+5. [File Limits](https://github.com/whitneylarose/data_catalog/blob/master/docs/file_limits.md)
+6. [Deletions](https://github.com/whitneylarose/data_catalog/blob/master/docs/deletions.md)
 ### Data Transfer tool 
 
 You will need a firewall exception to utilize Globus. 
