@@ -11,7 +11,7 @@ api_key = sys.argv[2]
 
 # We'll use the package_serach function to query for a key word.
 request = urllib2.Request(
-    'http://128.219.187.22/api/action/package_search?q='+ key_word)
+    'http://your-ckan-site/api/action/package_search?q='+ key_word)
 
 # Creating a dataset requires an authorization header.
 request.add_header('Authorization', api_key)
@@ -30,9 +30,17 @@ packages = response_dict['result']
 # Get dataset results
 resources_list = packages['results']
 
+
 # Download each dataset
-for resources in resources_list:
-    resource = resources['resources']
-    for r  in resource:
-       dataset_url = r['url']
-       wget.download(dataset_url)
+# If dataset is not hosted on your cite, write the link to a file
+with open ( key_word + '.txt', 'a') as f:
+    for resources in resources_list:
+        resource = resources['resources']
+        for r  in resource:
+           dataset_url = r['url']
+           if not 'your-ckan-site' in dataset_url:
+               f.write(dataset_url + '\n')
+           else:
+               wget.download(dataset_url)
+
+
