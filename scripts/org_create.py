@@ -28,7 +28,7 @@ for org in organizations_list:
 
     # We'll use the organization_create function to create a new organization.
     request = urllib2.Request(
-        'http://128.219.187.22/api/action/organization_create')
+        'http://your-ckan-site/api/action/organization_create')
 
     # Creating a organization requires an authorization header.
     request.add_header('Authorization', api_key)
