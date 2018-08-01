@@ -14,7 +14,7 @@ import requests
 def add_resource( id,key, path, r_name, r_format):
        print('Creating new resource...')
 
-       requests.post('http://128.219.187.22/api/action/resource_create',
+       requests.post('http://your-ckan-site/api/action/resource_create',
                   data={"package_id": id, "name": r_name, "format": r_format},
                   headers={"Authorization": key},
                   files=[('upload', file(path))])
@@ -35,7 +35,7 @@ def main(data):
     resource_name, format = file.split('.')
     package_name = resource_name.lower()
     package_name = package_name.replace(" ", "-")
-    api_key = '9c2012f1-4e25-4693-aff1-9d1c0058ef39'
+    api_key = 'your-api-key'
 
     # load metadata into list
     with open (json_file) as f:
@@ -59,7 +59,7 @@ def main(data):
 
     # We'll use the package_create function to create a new dataset.
     request = urllib2.Request(
-        'http://128.219.187.22/api/action/package_create')
+        'http://your-ckan-site/api/action/package_create')
 
     # Creating a dataset requires an authorization header.
     request.add_header('Authorization', api_key)
