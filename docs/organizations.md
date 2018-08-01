@@ -5,7 +5,7 @@ Organizations consist of members who control the creating, updating, viewing, an
 ### Creating organizations
 An user has the option to manually create organizations on the catalog site. By default, the user will become an admin to the organizations datasets with full access to edit/add/delete entires.
 
-**It is recommended that organizations are create manually via the Ckan site.** Creating organizations with the CKan API is possible but has limitations which are described below:
+**It is recommended that organizations are create manually via the Ckan site.** Creating organizations with the CKAN API is possible but has limitations which are described below:
 
  An example of creating organizations is found in orgs_create.py. It requires a  CSV file in the argument of the command. The user would run the following to create multiple organizations:
 ```
