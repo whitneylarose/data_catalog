@@ -1,19 +1,23 @@
-## Organizations 
+# Organizations 
 
 Organizations consist of members who control the creating, updating, viewing, and deleting datasets. 
 
-### Creating organizations
-An user has the option to manually create organizations on the catalog site. By default, the user will become an admin to the organizations datasets with full access to edit/add/delete entires.
+## Creating organizations
 
-**It is recommended that organizations are create manually via the Ckan site.** Creating organizations with the CKAN API is possible but has limitations which are described below:
+**It is recommended that organizations are created manually via the Ckan site.** 
 
- An example of creating organizations is found in orgs_create.py. It requires a  CSV file in the argument of the command. The user would run the following to create multiple organizations:
+A system admin has the option to manually create organizations or utilize the CKAN API. By default, you will become an admin to the organization you create and have full access to edit/add/delete datasets or members.
+
+
+CKAN API: 
+An example of creating organizations can be downloaded [here](https://github.com/whitneylarose/data_catalog/blob/master/scripts/org_create.py). In this example, you would run the following:
 ```
-python ors_create.py test_orgs.CSV
+python ors_create.py <org_file.csv>
 ```
- However, this options has limitations. The name of an organization can only be alphameric lowercase without spaces. For example, "Test Organization Example" would show up on the catalog site as "test-organization-example". CKAN does not provide another way to name organizations via http request. Therefore, the only way to properly format the name of an organization is by manual user input on the catalog's site.
 
- ### Deleting organizations  
+However, this has limitations. The name of an organization can only be alphameric lowercase without spaces. For example, "My Organization Example" would show up on the catalog site as "my-organization-example". CKAN does not provide another way to name organizations. Therefore, the only way to properly format the name of an organization is by manual user input on the catalog's site.
+
+ ## Deleting organizations  
 
  Organizations can not be delete and/or purged via the website.
  They must be deleted in database.
