@@ -16,7 +16,7 @@ file = os.path.basename(file_path)
 resource_name, format = file.split('.')
 package_name = resource_name.lower()
 package_name = package_name.replace(" ", "-")
-#api_key = '9c2012f1-4e25-4693-aff1-9d1c0058ef39'
+
 
 # check if there is metadata
 metadata = []
