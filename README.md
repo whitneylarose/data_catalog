@@ -2,7 +2,7 @@
 Whitey Nelson <br>
 Oak Ridge Nation Labratory <br>
 Advance Data and Workflow group <br>
-Latest Update: August 2nd 2018 <br>
+Latest Update: August 3rd, 2018 <br>
 
 
 Refer to the following links for information on set ups and modifications.
@@ -34,6 +34,11 @@ We utilzed CKAN, an open source data management framework.
 6. [Deletions](https://github.com/whitneylarose/data_catalog/blob/master/docs/deletions.md)
 ### Data Transfer tool 
 
-You will need a firewall exception to utilize Globus. This may take up to 3 - 4 weeks.
+You will need a firewall exception for port 2223 and an internet connection via ethernet to utilize Globus. Contact Cyber and the Solution Center for these requests. This may take up to 3 - 4 weeks.
 
-1. [Globus File Transfer](https://github.com/whitneylarose/data_catalog/blob/master/docs/globus_setup.md)
+1. [Globus Set Up](https://github.com/whitneylarose/data_catalog/blob/master/docs/globus_setup.md)
+
+
+### User Guides
+1. [Data Catalog User Guide](https://github.com/whitneylarose/data_catalog/blob/master/docs/user_guide.md)
+2. [Globus File Transfers](https://github.com/whitneylarose/data_catalog/blob/master/docs/globus_transfers.md)
