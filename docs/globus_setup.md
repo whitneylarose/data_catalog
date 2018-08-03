@@ -28,7 +28,7 @@ Last Edited: June 29, 2018  <br>
 
 ### Get Globus Connect Personal
 
-**Note: Globus Connect Personal requires a firewall exception for port 2223 and an internet question via ethernet. 
+**Note: Globus Connect Personal requires a firewall exception for port 2223 and an internet connection via ethernet. 
 This can be requested at https://ornl.service-now.com. ** 
 
 1. Click Get Globus Connect Personal under the Transfer Files tab.
