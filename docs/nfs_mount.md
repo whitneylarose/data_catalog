@@ -13,12 +13,6 @@ Note:  Mounting the NFS drive to an existing directory "hides" the content of th
 ```
 $ sudo apt install nfs-common
 ```
-
-* Create a folder. This will be where your NFS is mounted
-```
-$ sudo mkdir -p data
-```
-
 * Check the fstab file:
 ```
 $ cat /etc/fstab
@@ -34,20 +28,25 @@ $ sudo vim /etc/fstab
 ```
 enter your fstab entry
 ```
-</remote/export> /data nfs defaults 0 0
+</remote/export> /var/lib/ckan nfs defaults 0 0
 ```
   where ``</remote/export>`` is your CADES endpoint
 
-  ``/data`` is where the  directory will be mounted
+  ``/var/lib/ckan`` is the default storage space for CKAN datasets
 
    and `defaults` is a comma separated list of options. For additional informtaion on options refer [here](https://www.centos.org/docs/5/html/5.1/Deployment_Guide/s1-nfs-client-config-options.html).
 
 * Now, you can mount your drive
 ```
-$ sudo mount /data
+$ sudo mount /var/lib/ckan
 ```
 * Ensure your drive is mounted correctly
 ```
 $ df
 ```
-* You should see `/data` mounted to your endpoint.
+* You should see `/var/lib/ckan` mounted to your endpoint.
+
+* Restart your apache server to set up the storage space. 
+```
+sudo service apache2 restart
+```
